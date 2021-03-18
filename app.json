@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "Training Timer",
+    "description": "Training Timer is a simple app to help you plan your workouts. Select the number of rounds, duration and break time and Training Timer will automatically lauch a workout routine for you.",
+    "slug": "training-timer",
+    "version": "0.1",
+    "githubUrl": "https://github.com/vinsg/trainingtimer",
+    "platforms": ["ios"],
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1F2937"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": false
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
