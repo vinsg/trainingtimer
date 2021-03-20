@@ -17,8 +17,7 @@ const AboutBottomSheet = (): ReactElement => {
       <View style={{ alignItems: 'center' }}>
         <AboutText>Hello 👋</AboutText>
         <AboutText>
-          My name is Vincent, I am an aspiring developer based in Montreal,
-          Canada.
+          My name is Vincent, I am an aspiring developer based in Montreal 🇨🇦
         </AboutText>
         <BioLink label="Website" url="https://vinsg.ca" />
         <BioLink label="Twitter" url="https://twitter.com/_vinsg" />

@@ -1,7 +1,7 @@
 import { Ionicons } from '@expo/vector-icons';
 import React, { ReactElement, useCallback } from 'react';
-import { Linking, Pressable, Text } from 'react-native';
-import { useTheme } from 'styled-components/native';
+import { Linking, Pressable } from 'react-native';
+import styled, { useTheme } from 'styled-components/native';
 
 type Props = {
   label: string;
@@ -24,16 +24,21 @@ const BioLink = (props: Props): ReactElement => {
       style={{
         flexDirection: 'row',
         alignItems: 'center',
-        paddingTop: 16,
+        paddingTop: 20,
       }}
     >
-      <Text style={{ paddingRight: 6, fontSize: 20 }}>{props.label}</Text>
+      <Label>{props.label}</Label>
       <Ionicons
         name="arrow-forward-circle-outline"
-        size={24}
+        size={22}
         color={theme.textColors.secondaryText}
       />
     </Pressable>
   );
 };
+const Label = styled.Text`
+  padding-right: 6px;
+  font-size: ${props => props.theme.fontSize.small};
+  font-weight: 500;
+`;
 export default BioLink;

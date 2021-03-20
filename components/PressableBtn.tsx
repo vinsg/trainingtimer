@@ -17,7 +17,7 @@ const ButtonContainer = styled.Pressable`
 const ButtonText = styled.Text`
   font-size: 22px;
   text-align: center;
-  color: white;
+  color: ${props => props.theme.textColors.primaryText};
 `;
 
 type Props = {

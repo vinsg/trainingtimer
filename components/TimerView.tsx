@@ -123,7 +123,7 @@ const Container = styled.View`
 
 const SectionText = styled.Text`
   font-size: ${props => props.theme.fontSize.medium};
-  color: ${props => props.theme.colors.white};
+  color: ${props => props.theme.textColors.primaryText};
 `;
 
 const DisplayNum = styled.Text`

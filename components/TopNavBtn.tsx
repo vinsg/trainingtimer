@@ -1,6 +1,6 @@
 import { Ionicons } from '@expo/vector-icons';
 import React, { ReactElement } from 'react';
-import styled from 'styled-components/native';
+import styled, { useTheme } from 'styled-components/native';
 
 type Props = {
   onPress: () => void;
@@ -12,12 +12,13 @@ type Props = {
 Gear icon presenting the about bottom sheet.
 */
 const TopNavBtn = (props: Props): ReactElement => {
+  const theme = useTheme();
   return (
     <Button onPress={props.onPress} hitSlop={20}>
       <Ionicons
         name={props.iconName}
         size={props.size}
-        color="rgba(255, 255, 255, 0.9)"
+        color={theme.textColors.primaryText}
       />
     </Button>
   );

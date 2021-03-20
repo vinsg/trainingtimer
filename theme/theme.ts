@@ -17,6 +17,7 @@ declare module 'styled-components' {
       darkYellow: string;
 
       white: string;
+      coolGrey: string;
       lightGrey: string;
       darkGrey: string;
     };
@@ -42,11 +43,6 @@ declare module 'styled-components' {
   }
 }
 
-const textColors = {
-  primaryText: 'rgba(255, 255, 255, 0.9)',
-  secondaryText: '#292524',
-};
-
 const colors = {
   lightBlue: '#BFDBFE',
   darkBlue: '#1E40AF',
@@ -61,8 +57,14 @@ const colors = {
   darkYellow: '#92400E',
 
   white: '#FFFFFF',
+  coolGrey: '#F9FAFB',
   lightGrey: 'rgba(255, 255, 255, 0.1)',
   darkGrey: '#1F2937',
+};
+
+const textColors = {
+  primaryText: colors.coolGrey,
+  secondaryText: '#292524',
 };
 
 const spaces = {
@@ -76,8 +78,8 @@ const spaces = {
 };
 
 const fontSize = {
-  small: '20px',
-  medium: '26px',
+  small: '18px',
+  medium: '24px',
   large: '28px',
   xLarge: '42px',
 };

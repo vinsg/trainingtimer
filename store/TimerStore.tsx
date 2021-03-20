@@ -23,7 +23,10 @@ export default class TimerStore {
     this.timers[0] = new Timer(5, TimerType.ready);
     for (let i = 1; i <= rounds; i++) {
       this.timers.push(new Timer(roundDuration, TimerType.train));
-      this.timers.push(new Timer(breakDuration, TimerType.break));
+      // add a break after every training round except for the last round.
+      if (i !== rounds) {
+        this.timers.push(new Timer(breakDuration, TimerType.break));
+      }
     }
   }
 
